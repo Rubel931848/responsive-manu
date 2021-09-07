@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: 0;
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+header {
+    background: rgb(245, 241, 241);
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.25);
+}
+header .logo{
+    font-size: 42px;
+    color:rgb(14, 134, 233);
+    font-weight: bold;
+    display: block;
+    padding-left: 16px;
+    padding-top: 16px;
+}
+header nav{
+position: absolute;
+width:100%;
+background: rgb(245, 241, 241);
+box-shadow: 0px 5px 10px rgba(0,0,0,0.25);
+}
+.toggler__btn_container{
+    display: block;
+    text-align: center;
+}
+header nav li{
+    margin-left: 16px;
+    margin-bottom: 8px;
+}
+header nav li a{
+color:rgb(80, 77, 77);
+}
+header input[type="checkbox"]:checked ~ nav{
+    display: none;
+}
+.checkbox{
+    display: none;
+}
+
+.toggler__btn_container{
+    position: absolute;
+    right: 0;
+    top:0;
+    margin-right: 16px;
+    height:80px;
+    display: flex;
+    align-items: center;
+}
+
+.toggler__btn_container span,
+.toggler__btn_container span::after,
+.toggler__btn_container span::before{
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: rgb(14, 134, 233);
+}
+.toggler__btn_container span::after,
+.toggler__btn_container span::before{
+    position: absolute;
+    content: "";
+}
+.toggler__btn_container span::before{
+    bottom:7px;
+}
+.toggler__btn_container span::after{
+    top:7px;
+}

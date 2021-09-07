@@ -37,6 +37,9 @@ header nav li{
 header nav li a{
 color:rgb(80, 77, 77);
 }
+header nav li a:hover{
+    color:rgb(14, 134, 233);
+}
 header input[type="checkbox"]:checked ~ nav{
     display: none;
 }
@@ -73,4 +76,55 @@ header input[type="checkbox"]:checked ~ nav{
 }
 .toggler__btn_container span::after{
     top:7px;
+}
+@media all and (min-width:576px){
+    header .logo{
+        padding-left: 0px;
+        padding-top: 0px;
+       
+    }
+    .toggler__btn_container{
+        display: none;
+    }
+ 
+    header nav{
+        position:relative;
+        box-shadow: none;
+        background: none;
+ }
+    header{
+     display: flex;
+     align-items: center;
+ }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding:0px 5%;
+}
+
+    header > :first-child{
+        flex-basis: 40%;
+    }
+    header > :nth-child(3){
+        flex-basis: 60%;
+    }
+    header nav ul{
+        display: flex;
+    }
+    .toggler__btn_container span{
+        display: none;
+    }
+
+}
+
+
+@media all and (min-width:768px){
+    
+    header > :first-child{
+        flex-basis: 70%;
+    }
+    header > :nth-child(3){
+        flex-basis: 30%;
+    }
 }
